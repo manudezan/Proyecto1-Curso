@@ -1,0 +1,301 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background: rgb(255, 255, 255);
+    font-family: 'Montserrat', sans-serif;;
+    font-size:16px;
+}
+
+.contenedor {
+    width: 90%;
+    max-width: 950px;
+    margin: auto;
+    overflow: hidden;
+}
+
+
+/* -------------------- HEADER --------------------*/
+
+header {
+    background: url("img/Fondo.jpg") #7E2A28;
+    background-repeat: no-repeat;
+    background-position: center;
+    max-height: 600px;
+}
+
+header .menu {
+    margin: 40px 0;
+    text-align: right;
+}
+
+header .menu a {
+    color: white;
+    text-decoration: none;
+    display: inline-block;
+    padding: 0 20px 9px 20px;
+    border-bottom: 1px solid transparent;
+    border-left: 1px solid transparent;
+    font-size: 1em;
+}
+
+header .menu a:hover {
+    border-bottom: 1px solid white;
+    border-left: 1px solid white;
+}
+
+header .titulo {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    margin: 190px 0;
+}
+
+header .titulo .texto {
+    border: 2px solid rgb(255, 255, 255);
+    border-radius: 5px;
+    display: inline-block;
+    text-align: center;
+    padding: 20px 40px;
+}
+
+h1{
+    color: white;
+    font-weight: 500;
+    margin: 0;
+    margin-bottom: 6px;
+    font-size: 45px;
+    line-height: 50px ;
+}
+
+h2 {
+    color: white;
+    font-weight: 400;
+    margin: 0;
+    font-size: 25px;
+    line-height: 25px;
+}
+
+/* -------------------- MAIN --------------------*/
+
+main .contenedor {
+    overflow: visible;
+}
+
+main .acerca {
+    text-align: center;
+}
+
+main .acerca .perfil {
+    margin-top: -75px;
+}
+
+main .acerca .perfil img {
+    object-fit: cover;
+    object-position: 100% 0%;
+    width:150px;
+    height:150px;
+    vertical-align: top;
+    border-radius:50%;
+    border:6px solid rgba(255, 255, 255, 0.2);
+}
+
+main .acerca .texto {
+    line-height: 30px;
+    width: 80%;
+    margin: 40px auto 60px auto;
+}
+
+main .acerca h3 {
+    color: #A76F19;
+    font-weight: 500;
+    font-size: 26px;
+}
+
+main .acerca p {
+    color: #323232;
+    font-weight: 400;
+    font-size: 18px;
+}
+
+main .acerca p .bold {
+    color: #9E3232;
+}
+
+main .historias {
+    background: #f2f2f2;
+    padding: 60px 0;
+    text-align: center;
+}
+
+main .historias .contenedor {
+    overflow: hidden;
+}
+
+main .historias h3 {
+    color: black;
+    font-weight: 500;
+    font-size: 26px;
+    text-align: center;
+}
+
+main .historias .cont-his {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+main .historias .cont-his .historia {
+    width: 23%;
+    margin-bottom: 40px;
+}
+
+main .historias .cont-his .historia .tumb {
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+main .historias .cont-his .historia .tumb img {
+    width: 100%;
+    vertical-align: top;
+}
+
+main .historias .cont-his .historia .descripcion p {
+    font-weight: 400;
+    color: #323232;
+    font-size: 14px;
+    margin-top: 0px;
+}
+
+main .historias .cont-his .historia .descripcion .nombre {
+    font-weight: 500;
+    font-size: 16px;
+    color: #9E3232;
+    margin-bottom: 5px;
+    margin-top: 15px;
+}
+
+/* -------------------- FOOTER --------------------*/
+
+footer .contacto {
+    padding: 60px 0px;
+}
+
+.tres {
+    color: #9E3232;
+    font-weight: 500;
+    font-size: 26px;
+    text-align: center;
+}
+
+.form {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+input[type="text"], input[type="email"], textarea {
+    border: 2px solid #CECECE;
+    border-radius: 7px;
+    padding: 15px 20px;
+    font-size: 19px;
+    color: #a4a4a4;
+}
+
+input[type="text"]:focus, input[type="email"]:focus, textarea:focus {
+    border: 2px solid #9E3232;
+    color: #323232;
+    background: rgba(197, 115, 115, 0.15)
+}
+
+input[type="text"], input[type="email"] {
+    width: 49%;
+    margin-bottom: 15px;
+}
+
+textarea {
+    width: 100%;
+    height: 100px;
+    max-width: 100%;
+    min-width: 100%;
+    max-height: 200px;
+    min-height: 100px;
+    margin-bottom: 15px;
+}
+
+.boton {
+    margin: auto;
+    background: #9E3232;
+    color: white;
+    border: none;
+    border-radius:3px;
+    padding: 15px 40px;
+    cursor: pointer;
+}
+
+.boton:hover {
+    background:#772121 ;
+}
+
+.redes {
+    background: #772121;
+    padding: 60px 0px;
+}
+
+.redes .contenedor {
+    display: flex;
+    justify-content: center;
+}
+
+.redes a {
+    text-align: center;
+    width: 100px;
+    padding: 15px 0;
+    display: block;
+    border-radius: 5px;
+    margin: 0 20px
+}
+
+.pinterest:hover { background: #E60023;}
+.github:hover { background: #777777;}
+.youtube:hover { background: #FF0000;}
+.discord:hover { background: #7289DA;}
+.netflix:hover { background: #E50914;}
+
+/* -------------------- RESPONSIVE --------------------*/
+
+@media screen and (max-width: 700px) {
+    header .menu {
+        text-align: center;
+    }
+    main .historias .cont-his .historia {
+        width: 46%;
+    }
+    h1 {
+        font-size: 27px;
+        margin-bottom: 1px;
+    }
+    h2 {
+        font-size: 20px;
+    }
+
+}
+
+@media screen and (max-width: 600px) {
+    .redes .contenedor {
+        flex-wrap: wrap;
+        padding: 20px 0;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    header .menu {
+        font-size: 0.75em;
+    }
+}
+
+
+
+/* background: rgba(197, 115, 115, 0.8)
